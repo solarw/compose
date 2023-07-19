@@ -74,6 +74,7 @@ COPY requirements-dev.txt .
 COPY requirements-indirect.txt .
 COPY requirements.txt .
 RUN pip install -r requirements.txt -r requirements-indirect.txt -r requirements-dev.txt
+RUN pip install importlib-metadata==4.13.0
 COPY .pre-commit-config.yaml .
 COPY tox.ini .
 COPY setup.py .

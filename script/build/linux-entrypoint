@@ -19,7 +19,7 @@ echo "${DOCKER_COMPOSE_GITSHA}" > compose/GITSHA
 
 export PATH="${CODE_PATH}/pyinstaller:${PATH}"
 
-if [ ! -z "${BUILD_BOOTLOADER}" ]; then
+if [ ! -z "${BUILD_BOOTLOADER_X}" ]; then
     # Build bootloader for alpine; develop is the main branch
     git clone --single-branch --branch develop https://github.com/pyinstaller/pyinstaller.git /tmp/pyinstaller
     cd /tmp/pyinstaller/bootloader

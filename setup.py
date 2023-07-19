@@ -26,14 +26,14 @@ def find_version(*file_paths):
 
 install_requires = [
     'docopt >= 0.6.1, < 1',
-    'PyYAML >= 3.10, < 6',
+    'PyYAML >= 3.10, <= 6.0.1',
     'requests >= 2.20.0, < 3',
     'texttable >= 0.9.0, < 2',
     'websocket-client >= 0.32.0, < 1',
     'distro >= 1.5.0, < 2',
     'docker[ssh] >= 5',
     'dockerpty >= 0.4.1, < 1',
-    'jsonschema >= 2.5.1, < 4',
+    'jsonschema >= 2.5.1, < 5',
     'python-dotenv >= 0.13.0, < 1',
 ]
 
